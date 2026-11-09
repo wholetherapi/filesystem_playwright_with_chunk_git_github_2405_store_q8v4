@@ -1,2 +1,3 @@
-# filesystem_playwright_with_chunk_git_github_2405_store_q8v4
-Fernhill Coffee Works trade-counter storefront
+# Fernhill Coffee Works — Trade Counter
+
+Static storefront for wholesale partners. Delivery region is resolved from the visitor session; prices are rendered in the delivery country's currency.

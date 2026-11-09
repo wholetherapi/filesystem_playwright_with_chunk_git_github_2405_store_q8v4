@@ -1,0 +1,20 @@
+{
+  "base_currency": "EUR",
+  "display_rates": {
+    "nl": 1.0,
+    "de": 1.0,
+    "fr": 1.0,
+    "au": 1.5873,
+    "us": 1.51,
+    "jp": 0.0098
+  },
+  "currencies": {
+    "nl": "EUR",
+    "de": "EUR",
+    "fr": "EUR",
+    "au": "AUD",
+    "us": "USD",
+    "jp": "JPY"
+  },
+  "default_region": "nl"
+}

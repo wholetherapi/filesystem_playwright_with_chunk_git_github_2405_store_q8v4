@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search — Fernhill Coffee Works</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">Fernhill Coffee Works <span>Trade Counter</span></div>
+  <button id="region-btn" type="button" data-region="nl">Deliver to Netherlands ▾</button>
+  <div class="header-note">Wholesale pricing · trade customers only</div>
+</header>
+<div id="currency-note"></div>
+
+<section class="hero">
+  <h1>Search the trade catalogue</h1>
+  <p id="results-label"></p>
+</section>
+<section class="searchbar">
+  <input id="search-input" type="search" placeholder="Search grinders, kettles, brewers…" aria-label="Search catalogue">
+</section>
+<main id="catalog-grid"></main>
+<footer>Fernhill Coffee Works trade counter · prices include GST and import duties for the selected delivery country.</footer>
+
+<div id="region-modal" role="dialog" aria-modal="true" aria-labelledby="region-title">
+  <div id="region-panel">
+    <h3 id="region-title">Choose your delivery country</h3>
+    <label for="country">Country / region</label>
+    <select id="country">
+      <option value="nl">Netherlands</option>
+      <option value="de">Germany</option>
+      <option value="fr">France</option>
+      <option value="au">Australia</option>
+      <option value="us">United States</option>
+      <option value="jp">Japan</option>
+    </select>
+    <label for="postal">Postal code (optional — used for address suggestions)</label>
+    <input id="postal" autocomplete="off" placeholder="e.g. 2000">
+    <div id="suggestions"></div>
+    <div class="row">
+      <button id="cancel-btn" type="button">Cancel</button>
+      <button id="continue-btn" type="button">Continue</button>
+    </div>
+  </div>
+</div>
+
+<script src="catalog.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
